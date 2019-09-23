@@ -17,5 +17,5 @@ bazel build //:app_binary_deploy.jar
 ## Where is jar-file located?
 
 ```
-
+java -jar ./bazel-bin/app_binary_deploy.jar
 ```
