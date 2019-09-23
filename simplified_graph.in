@@ -1,0 +1,20 @@
+digraph mygraph {
+  node [shape=box];
+  "//:app_binary"
+  "//:app_binary" -> "//:app"
+  "//:app"
+  "//:app" -> "//:src/main/scala/demo/Main.scala"
+  "//:app" -> "//:conference"
+  "//:conference"
+  "//:conference" -> "//:src/main/scala/demo/Conference.scala"
+  "//:conference" -> "//:id_generator"
+  "//:conference" -> "//:visitor"
+  "//:id_generator"
+  "//:id_generator" -> "//:src/main/scala/demo/IdGenerator.scala"
+  "//:src/main/scala/demo/IdGenerator.scala"
+  "//:src/main/scala/demo/Conference.scala"
+  "//:src/main/scala/demo/Main.scala"
+  "//:visitor"
+  "//:visitor" -> "//:src/main/scala/demo/Visitor.scala"
+  "//:src/main/scala/demo/Visitor.scala"
+}
